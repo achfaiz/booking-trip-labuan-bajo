@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Form Booking Trip"
+            android:layout_gravity="center"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama :"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/etNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Lengkap"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email :"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Hp :"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/etNomor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nomor HP"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Destinasi :"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerDestinasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Trip :"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <RadioButton
+                android:id="@+id/rbOpenTrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Open Trip"/>
+
+            <RadioButton
+                android:id="@+id/rbPrivateTrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Private Trip"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fasilitas Tambahan :"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textSize="17dp"/>
+
+        <CheckBox
+            android:id="@+id/cbHotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Include Hotel"/>
+
+        <CheckBox
+            android:id="@+id/cbMakan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Include Makan"/>
+
+        <CheckBox
+            android:id="@+id/cbDokumentasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Include Dokumentasi"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Tanggal Trip :"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textSize="17dp"/>
+
+        <DatePicker
+            android:id="@+id/datePickerTrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnBookingSekarang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Booking Sekarang"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

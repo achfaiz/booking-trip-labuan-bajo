@@ -1,7 +1,9 @@
 package com.ubl.aplikasisaya;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.Spanned;
@@ -44,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
         TextView txtResult = findViewById(R.id.txt_result);
         RadioGroup rgSemester = findViewById(R.id.rgSemester);
         CheckBox cbAgree = findViewById(R.id.cbAgree);
-
         btnRegister.setOnClickListener(v -> {
 
             String fullName = txtFullName.getText().toString().trim();
@@ -112,6 +113,20 @@ public class MainActivity extends AppCompatActivity {
 
             txtResult.setText(spannable);
             txtResult.setVisibility(View.VISIBLE);
+
         });
     }
+
+    public void handleOpenBrowser(View view) {
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("https://elearning.budiluhur.ac.id/"));
+        startActivity(intent);
+    }
+
+    public void handleCall(View view) {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("tel:08123456789"));
+        startActivity(intent);
+    }
+
 }

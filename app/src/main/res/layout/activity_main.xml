@@ -190,6 +190,19 @@
             android:fontFamily="monospace"
             android:visibility="gone"/>
 
+        <Button
+            android:id="@+id/openGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open Website"
+            android:onClick="handleOpenBrowser"/>
+        <Button
+            android:id="@+id/btnCall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open Telephone"
+            android:onClick="handleCall"/>
+
     </LinearLayout>
 
 </ScrollView>
